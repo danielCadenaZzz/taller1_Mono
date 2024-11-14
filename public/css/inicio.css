@@ -5,8 +5,7 @@
   /*botones*/
 a:link, a:visited {
   background-color: #3a5a77; 
-
-
+  text-align: center;
   color: white;
   padding: 15px 30px;
   text-align: center;
@@ -74,9 +73,39 @@ a:link, a:visited {
 }
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*tarea*/
-.tarea{
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
+header {
+    background-color: #d9534f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+section {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
 /*formulario */
 #formTareas {
   font-family: Arial, sans-serif;
@@ -241,6 +270,7 @@ input:focus, select:focus {
 .estado{
   font-size: 50px;
   text-align: center;
+  /* color:; */
 }
 #tituloResultado {
   font-size: 30px;

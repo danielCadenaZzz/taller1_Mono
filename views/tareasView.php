@@ -117,7 +117,7 @@ class TareasViews
     function getFormTarea($data)
 {
     $datos = null;
-    $form = '<form action="confirmarRegistro.php" method="post" id="formTareas">';
+    $form = '<form action="regComf.php" method="post" id="formTareas">';
     if (!empty($data['cod'])) {
         $form .= '<input type="hidden" name="cod" value="' . $data['cod'] . '">';
         $datos = $this->controller->getTarea($data['cod']);
@@ -212,7 +212,7 @@ class TareasViews
     function estado($data)
 {
     $form = '<h2>Modificar Estado</h2>';
-    $form .= '<form action="confirmarEstado.php" method="post" id="formEstado">';
+    $form .= '<form action="estadoComf.php" method="post" id="formEstado">';
     if (!empty($data['cod'])) {
         $form .= '<input type="hidden" name="cod" value="' . $data['cod'] . '">';
     }
@@ -253,7 +253,7 @@ function getMsgNewEstado($datosestado)
 function empleado($data)
 {
     $form = '<h2>Modificar Empleado</h2>';
-    $form .= '<form action="confirmarEmpleado.php" method="post" id="formEmpleado">';
+    $form .= '<form action="empleadoComf.php" method="post" id="formEmpleado">';
     if (!empty($data['cod'])) {
         $form .= '<input type="hidden" name="cod" value="' . $data['cod'] . '">';
     }

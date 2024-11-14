@@ -7,26 +7,30 @@ require '../views/tareasView.php';
 
 use App\views\TareasViews;
 
-$tareasViews = new TareasViews();
-$msg = $tareasViews->getMsgDeleteTarea($_GET['cod']);
+$empleadoViews = new TareasViews();
+$datosFormulario = [
+    'cod' => $_POST['cod'] ?? null,
+    'empleado' => $_POST['empleado'] ?? null
+];
+$msg = $empleadoViews->getMsgNewEmpleado($datosFormulario);
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliminar tarea</title>
+    <title>Confirmar acción</title>
     <link rel="stylesheet" href="css/inicio.css">
 
 </head>
 <body>
     <header>
-        <h1 class="estado">Eliminar</h1>
+        <h1 class="estado">Estado de acción</h1>
     </header>
     <section>
-        <?php echo $msg;?>
+        <?php echo $msg; ?>
         <br>
-        <a href="inicio.php">Volver al inicio</a>
+        <a class="botonInicio" href="inicio.php">Volver al inicio</a>
     </section>
 </body>
 </html>
