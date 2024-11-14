@@ -1,34 +1,25 @@
 <?php
-
 namespace App\models\db;
 
+use App\models\entities\Tarea;
 use mysqli;
 
-class TareasDb
-{
+class TareasDb {
     private $host = 'localhost';
     private $user = 'root';
     private $pwd = '';
     private $name = 'tareas_db';
     private $conex;
 
-    function __construct()
-    {
-        $this->conex = new mysqli(
-            $this->host,
-            $this->user,
-            $this->pwd,
-            $this->name,
-        );
+    function __construct() {
+        $this->conex = new mysqli($this->host, $this->user, $this->pwd, $this->name);
     }
 
-    function close()
-    {
+    function close() {
         $this->conex->close();
     }
 
-    function query($sql)
-    {
+    function query($sql) {
         if ($this->conex->connect_error) {
             echo $this->conex->connect_error;
             return null;
@@ -36,3 +27,4 @@ class TareasDb
         return $this->conex->query($sql);
     }
 }
+?>

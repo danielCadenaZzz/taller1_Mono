@@ -1,0 +1,271 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  /*botones*/
+a:link, a:visited {
+  background-color: #3a5a77; 
+
+
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.boton:hover {
+  background-color: #ffd700;
+  color: #000;
+  font-size: 17px;
+}
+
+/*crear*/
+#crear:hover {
+  background-color: #28a745;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*boton eliminar*/
+#eliminar:hover {
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 17px;
+}
+
+/*boton modificar*/
+#modificar:hover {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 17px;
+}
+
+/*tabla*/
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 20px;
+  border-radius: 10px; 
+  overflow: hidden;
+}
+.tabla th, .tabla td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  
+}
+
+/*impar*/
+.tabla tr:nth-child(odd) {
+  background-color: #f0f4f8; 
+}
+
+/*par*/
+.tabla tr:nth-child(even) {
+  background-color: #e1e8f0; 
+}
+
+/*encabezado*/
+.tabla th {
+  background-color: #3a5a77; 
+  color: white;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*tarea*/
+.tarea{
+
+}
+/*formulario */
+#formTareas {
+  font-family: Arial, sans-serif;
+  width: 40%;  /* Ajustado a un ancho más estrecho */
+  height: auto;
+  margin: 20px;
+  padding: 14px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  float: left;  /* Alineado a la izquierda */
+}
+
+.tituloFormulario {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/*campos de formulario */
+.fieldsetFormulario {
+  border: none;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.legendFormulario {
+  font-size: 16px;
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.campoFormulario {
+  margin-bottom: 12px;
+}
+
+.textoEjem {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Campos de fecha y texto */
+.inputFecha, .inputTexto, select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.inputFecha:focus, .inputTexto:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}
+
+/*boton */
+.botonFormulario {
+  text-align: center;
+}
+
+.btnFormulario {
+  padding: 8px 20px;
+  background-color: #3a5a77; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btnFormulario:hover {
+  background-color: #00e1ff;
+  color: #000;
+}
+
+input:focus, select:focus {
+  background-color: #f0f8ff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+
+
+
+.textoEjem{
+  font-size: 20px;
+  margin: 15px;
+  color: rgb(7, 41, 61);
+}
+.impedimento{
+  background-color: #808080;
+}
+/*estado*/
+/* Formulario de estado */
+#formEstado {
+  font-family: Arial, sans-serif;
+  width: 40%;
+  height: auto;
+  margin: auto;
+  padding: 14px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  float: center;
+  
+}
+
+#tituloEstado {
+  font-size: 80px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.campoFormulario {
+  margin-bottom: 12px;
+}
+
+.textoEjem {
+  font-size:17px;
+  color: #555;
+}
+
+#selectEstado select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Botón de formulario */
+.botonFormulario {
+  text-align: center;
+}
+
+.btnFormulario {
+  padding: 8px 20px;
+  background-color: #3a5a77; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btnFormulario:hover {
+  background-color: #00e1ff;
+  color: #000;
+}
+
+
+
+
+
+
+/* Mensajes de resultado */
+.estado{
+  font-size: 50px;
+  text-align: center;
+}
+#tituloResultado {
+  font-size: 30px;
+  color: green;
+  margin-bottom: 15px;
+  text-align: center;
+  
+}
+
+.msgExito {
+  color: green;
+  text-align: center;
+  font-size: 30px;
+}
+
+.msgError {
+  color: red;
+  text-align: center;
+  font-size: 20px;
+}
+
+.botonInicio{
+  margin: 42px;
+
+}
+h2{
+  text-align: center;
+}
